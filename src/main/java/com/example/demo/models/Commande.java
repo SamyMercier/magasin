@@ -50,4 +50,12 @@ public class Commande {
 		this.client = client;
 	}
 
+	public Collection<Produit> getProduits() {
+		return produits;
+	}
+
+	public void setProduits(Collection<Produit> produits) {
+		this.produits = produits;
+	}
+
 }

@@ -51,4 +51,12 @@ public class Produit {
 		this.prix = prix;
 	}
 
+	public Categorie getCategorie() {
+		return categorie;
+	}
+
+	public void setCategorie(Categorie categorie) {
+		this.categorie = categorie;
+	}
+	
 }
