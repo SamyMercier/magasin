@@ -42,4 +42,9 @@ public class CommandeServiceImpl implements ICommandeService{
 	public Commande update(Commande item) {
 		return this.repository.save(item);
 	}
+
+	@Override
+	public List<Commande> findByClientId(Long idClient) {
+		return this.repository.findByClientId(idClient);
+	}
 }

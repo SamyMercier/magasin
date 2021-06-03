@@ -22,6 +22,11 @@ public class CommandeController {
 	@Autowired
 	private ICommandeService service;
 
+	@GetMapping("/client/{id}")
+	public List<Commande> findByClientId(@PathVariable Long id) {
+		return this.service.findByClientId(id);
+	}
+	
 	@GetMapping()
 	public List<Commande> findAll() {
 		return this.service.findAll();
